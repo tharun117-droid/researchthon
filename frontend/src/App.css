@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.textbox {
+  border: 2px solid hsla(0, 0%, 27%, 0.963);
+  border-radius: 1cm;
+  padding: 16px 20px;   
+  margin-top: 350px;
+  margin-left: 2px;         
+  font-size: 18px;      
+  width: 600px;         
+}
+
+.plusbutton{
+  border: 3px solid hsla(0, 0%, 27%, 0.963);
+  border-radius: 20cm;
+  padding-top: 15px;  
+  margin-top: 350px;
+}
+
+.input-container {
+  position: fixed;
+  bottom: 20px;        
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center; 
+}
+
+.inputDis {
+  position: relative;
+  align-self: flex-end;       /* pushes message to right side */
+  margin-bottom: 60px;
+  margin-left: 500px;         /* small gap from right edge */  /* dark bubble background */
+  color: white;               /* readable text */
+  border-radius: 20px;
+  padding: 12px 18px;
+  max-width: 40%;             /* limit bubble width */
+  font-size: 16px;
+  word-wrap: break-word;      /* wrap long text neatly */
+  text-align: right;           /* text starts from left inside bubble */
+}
+
+.outputDis {
+  align-self: flex-start;      /* keeps output on left side */
+  margin: 8px auto 8px 20px;   /* consistent margin */  /* different color to distinguish */
+  color: white;
+  border-radius: 20px;
+  padding: 12px 18px;
+  max-width: 60%;
+  font-size: 16px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+
